@@ -12,10 +12,9 @@ public class Main {
         Apple greenApple = new Apple(8, 60, Colour.GREEN);
         Food[] cart = new Food[]{meat, redApple, greenApple};
         ShoppingCart shoppingCart = new ShoppingCart(cart);
-        //TODO: вывод как в задании
-        System.out.println("Общая сумма заказа без скидки " + shoppingCart.calculateCartWithDiscount());
-        System.out.println("Общая сумма заказа со скидкой " + shoppingCart.calculateVegetarianCartWithoutDiscount());
-        System.out.println("Сумма всех вегетарианских продуктов без скидки " + shoppingCart.calculateCartWithoutDiscount());
+        System.out.println("Общая сумма заказа со скидкой "  + shoppingCart.calculateCartWithDiscount());
+        System.out.println("Сумма всех вегетарианских продуктов без скидки " + shoppingCart.calculateVegetarianCartWithoutDiscount());
+        System.out.println("Общая сумма заказа без скидки " + shoppingCart.calculateCartWithoutDiscount());
 
     }
 }
