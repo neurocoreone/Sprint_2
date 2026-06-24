@@ -1,8 +1,10 @@
-import model.Apple;
-import model.Food;
-import model.Meat;
-import model.constants.Colour;
-import service.ShoppingCart;
+package ru.yandex.practicum;
+
+import ru.yandex.practicum.model.Apple;
+import ru.yandex.practicum.model.Food;
+import ru.yandex.practicum.model.Meat;
+import ru.yandex.practicum.model.constants.Colour;
+import ru.yandex.practicum.service.ShoppingCart;
 
 public class Main {
     public static void main(String[] args) {

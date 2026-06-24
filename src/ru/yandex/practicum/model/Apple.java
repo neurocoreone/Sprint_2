@@ -1,8 +1,10 @@
-package model;
+package ru.yandex.practicum.model;
 
-import model.constants.Colour;
+import ru.yandex.practicum.model.constants.Colour;
 
-public class Apple extends Food implements Discountable {
+import static ru.yandex.practicum.model.constants.Discount.DISCOUNT;
+
+public class Apple extends Food {
     private String colour;
 
     public Apple(int amount, double price, String colour) {
@@ -15,7 +17,7 @@ public class Apple extends Food implements Discountable {
     @Override
     public double getDiscount() {
         if (colour.equals(Colour.RED)) {
-            return 60;
+            return DISCOUNT;
         }
         return 0;
     }
